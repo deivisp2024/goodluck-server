@@ -25,7 +25,7 @@ const firebaseConfig = {
 const VAPID_KEY = "TU_VAPID_KEY_AQUI";
 
 // ⚠️ URL de tu servidor backend (ver servidor.js)
-const BACKEND_URL = "https://tu-servidor.railway.app";
+const BACKEND_URL = "https://goodluck-server.onrender.com";
 
 // ─── Inicialización ─────────────────────────────────────────
 const app       = initializeApp(firebaseConfig);
