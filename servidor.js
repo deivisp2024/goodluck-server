@@ -19,7 +19,7 @@ app.use(express.json());
 // ⚠️ Descarga tu archivo serviceAccountKey.json desde:
 //    Firebase Console → Configuración → Cuentas de servicio
 //    → Generar nueva clave privada
-const serviceAccount = require('/etc/secrets/serviceAccountKey.json');
+const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount)
